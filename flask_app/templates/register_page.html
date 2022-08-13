@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" type = "text/css" href = "{{ url_for('static',filename = 'css/style.css') }}">
+</head>
+<body>
+    <h1>Registration Page</h1>
+    <form action="/trial" method="post"><!--REGISTER THEN SEND BACK TO LOGIN WITH PROPERTIES FILLED OUT -->
+        <label>Username: <input type="text" name="username"></label>
+        <label>Color: <input type="color" name="color" class = "color"></label>
+        <label>Password: <input type="password" name="password"></label>
+        <label>Cofirm Password <input type="password" name="confirm_password"></label>
+        <button class = "playbtn" onmouseover="highlightR(this)" onmouseout="unhighlightR(this)">Play!</button>
+    </form>
+</body>
+<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+</html>

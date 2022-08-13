@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login P1/P2</title>
+    <link rel ="stylesheet" type = "text/css" href = "{{ url_for('static',filename = 'css/style.css') }}"
+</head>
+<body>
+    <a href="#">Leaderboard</a>
+    <h1>CONNECT 4!</h1>
+    <div class = "container">
+        <div class = "user1" id = "user1">
+            <div>
+                <h1>Player 1</h1>
+            </div>
+            <form action=""> <!--Login ACTION-->
+                <label>Name: <input type="text" name="name"></label>
+                <label>Password: <input type="text" name="password"></label>
+                <button class = "loginbtn" id = "login2" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="loginIn('user1')">Login</button>
+            </form>
+        </div>
+        <div >
+
+        </div>
+        <div class = "user2" id = "user2">
+            <div>
+                <h1>Player 2</h1>
+            </div>
+            <form action=""> <!--Login ACTION-->
+                <label>Name: <input type="text" name="name"></label>
+                <label>Password: <input type="text" name="password"></label>
+                <button class = "loginbtn" id = "login2" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="loginIn('user2')">Login</button>
+            </form>
+        
+        </div>
+    </div>
+    <form action="/register"> <!--SEND TO REGISTER PAGE-->
+        <button class = "registerbtn" id = "register" onmouseover="highlightR(this)" onmouseout="unhighlightR(this)">Register</button>
+    </form>
+    
+</body>
+<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+</html>

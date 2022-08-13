@@ -1,0 +1,72 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    font-size: 60px;
+}
+
+.container {
+    display: flex;
+}
+
+.user1, .user2, form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user1, .user2 {
+    margin: 50px;
+}
+
+h1 {
+    font-size: 65px;
+}
+
+label {
+    font-size: 25px;
+}
+
+input {
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.loginbtn {
+    margin:20px 0px;
+    width:125px;
+    font-size: 20px;
+    padding:10px;
+    background-color: rgb(126,126,126);
+    color:white;
+    border:none;
+    border-radius: 10px;
+}
+
+.registerbtn, .playbtn {
+    margin:15px 0px;
+    width:150px;
+    font-size: 20px;
+    padding:10px;
+    background-color: rgb(55, 55, 55);
+    color:white;
+    border:none;
+    border-radius: 10px;
+}
+
+.color {
+    width: 150px;
+    height:35px;
+}
