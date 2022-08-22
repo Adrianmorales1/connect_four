@@ -1,0 +1,84 @@
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.game {
+    margin-top: 10px;
+    display: flex;
+}
+
+.column {
+    background-color: rgb(255, 230, 0);
+    border:2px solid rgb(28, 28, 28);
+}
+
+.piece {
+    margin: 10px;
+    width:65px;
+    height:65px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 30px;
+}
+
+button {
+    font-size: 25px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 10px;
+}
+
+.form {
+    display: none;
+    position: fixed;
+    padding:30px;
+    bottom: 50vh;
+    left: 20%;
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+.form > div {
+    display:flex;
+    justify-content: center;
+}
+
+.yes, .no {
+    width:100px;
+    margin:10px 15px;
+    padding: 20px;
+    border-radius: 25%;
+    border: none;
+}
+
+.yes {
+    color:white;
+    background-color: rgb(36, 212, 36);
+}
+
+.no {
+    color:white;
+    background-color: rgb(255, 69, 69);
+}

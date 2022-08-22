@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect4!</title>
+    <link rel ="stylesheet" type = "text/css" href = "{{ url_for('static',filename = 'css/connect4.css') }}">
+</head>
+<body>
+    <div class = "user">
+        <h1>Player 1</h1>
+        <h2>Wins:</h2>
+        <h2>Loses:</h2>
+        <h2>Ties:</h2>
+        <button onclick="confirmForfiet('player1')">Forfiet?</button>
+    </div>
+
+    <div class = "game">
+        <div class = "column">
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+        </div>
+        <div class = "column">
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+        </div>
+        <div class = "column">
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+        </div>
+        <div class = "column">
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+        </div>
+        <div class = "column">
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+        </div>
+        <div class = "column">
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+        </div>
+        <div class = "column">
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+            <div class = "piece"></div>
+        </div>
+    </div>
+
+    <div class = "form" id = "forfiet">
+        <h1>Are you sure you would like to forfiet?</h1>
+        <div>
+            <form action="/lose" method = "post">
+                <button class="yes">Yes</button>
+            </form>
+            <button class = "no" onclick="closeForfiet()">No</button>
+        </div>
+        
+    </div>
+
+    <div class = "user">
+        <h1>Player 2</h1>
+        <h2>Wins:</h2>
+        <h2>Loses:</h2>
+        <h2>Ties:</h2>
+        <button onclick="confirmForfiet('player2')">Forfiet?</button>
+    </div>
+</body>
+<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+</html>

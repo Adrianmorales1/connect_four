@@ -16,7 +16,10 @@ function unhighlightR(element) {
     element.style.backgroundColor = "rgb(55,55,55)";
 }
 
-function loginIn(e) {
-    var element = document.getElementById(e);
-    element.remove();
+function confirmForfiet(player) {
+    document.getElementById("forfiet").style.display = "block";
+}
+
+function closeForfiet() {
+    document.getElementById("forfiet").style.display = "none";
 }
