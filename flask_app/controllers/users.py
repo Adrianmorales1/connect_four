@@ -15,7 +15,7 @@ def login():
     return redirect('/loginplayer2')
 
 @app.route('/loginplayer2')
-def logintemplate():
+def login_template():
     return render_template("login_page_user2.html")
 
 @app.route('/trial', methods = ['POST'])
@@ -32,3 +32,15 @@ def login2():
 def game():
     print("gametime!!")
     return render_template('connect4.html')
+
+
+
+
+@app.route('/profile/edit/page')
+def profile_edit():
+    return render_template('profile_edit.html')
+
+
+@app.route('/profile/page')
+def profile_page():
+    return render_template("profile_page.html")

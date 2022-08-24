@@ -55,7 +55,7 @@ input {
     border-radius: 10px;
 }
 
-.registerbtn, .playbtn {
+.registerbtn, .playbtn, .editbtn {
     margin:15px 0px;
     width:150px;
     font-size: 20px;
