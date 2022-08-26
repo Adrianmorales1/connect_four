@@ -24,7 +24,7 @@ function confirmForfiet(playerId, playerName) {
     forfietDiv.insertBefore(newh1, forfietDiv.children[0]);
     //username of player.. are you sure you would like to foriet?
     //change the form action to make the playerid that clicked forfiet lose
-    //   "/lose/" + playerid;
+    //   "/lose/" + playerid; 
 }
 
 function closeForfiet() {
