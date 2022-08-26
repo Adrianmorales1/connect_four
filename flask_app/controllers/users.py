@@ -34,7 +34,9 @@ def game():
     return render_template('connect4.html')
 
 
-
+@app.route('/leaderboard')
+def leaderboard():
+    return render_template('leaderboard.html')
 
 @app.route('/profile/edit/page')
 def profile_edit():

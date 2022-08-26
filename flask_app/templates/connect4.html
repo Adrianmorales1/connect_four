@@ -13,7 +13,7 @@
         <h2>Wins:</h2>
         <h2>Loses:</h2>
         <h2>Ties:</h2>
-        <button onclick="confirmForfiet('player1')">Forfiet?</button>
+        <button onclick="confirmForfiet(1, 'Player1')">Forfiet?</button>
     </div>
 
     <div class = "game">
@@ -76,7 +76,6 @@
     </div>
 
     <div class = "form" id = "forfiet">
-        <h1>Are you sure you would like to forfiet?</h1>
         <div>
             <form action="/lose" method = "post">
                 <button class="yes">Yes</button>
@@ -91,7 +90,7 @@
         <h2>Wins:</h2>
         <h2>Loses:</h2>
         <h2>Ties:</h2>
-        <button onclick="confirmForfiet('player2')">Forfiet?</button>
+        <button onclick="confirmForfiet(2, 'Player2')">Forfiet?</button>
     </div>
 </body>
 <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
